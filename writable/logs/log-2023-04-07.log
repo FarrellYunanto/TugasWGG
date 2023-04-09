@@ -1,0 +1,471 @@
+ERROR - 2023-04-07 19:27:31 --> mysqli_sql_exception: Table 'trainingwgg23.admin' doesn't exist in C:\xampp\htdocs\TugasWGG\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\TugasWGG\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\TugasWGG\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\TugasWGG\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\TugasWGG\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TugasWGG\app\Models\AdminPageModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TugasWGG\app\Controllers\AdminPageControl.php(16): App\Models\AdminPageModel->tampilkan_data()
+#6 C:\xampp\htdocs\TugasWGG\system\CodeIgniter.php(934): App\Controllers\AdminPageControl->index()
+#7 C:\xampp\htdocs\TugasWGG\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPageControl))
+#8 C:\xampp\htdocs\TugasWGG\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TugasWGG\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-07 19:27:31 --> Table 'trainingwgg23.admin' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+ORDER BY `NRP`', [], false)
+ 2 APPPATH\Models\AdminPageModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AdminPageControl.php(16): App\Models\AdminPageModel->tampilkan_data()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminPageControl->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPageControl))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 19:31:47 --> Undefined property: stdClass::$Nilai
+in APPPATH\Views\adminPage.php on line 173.
+ 1 APPPATH\Views\adminPage.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Nilai', 'APPPATH\\Views\\adminPage.php', 173)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\adminPage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('adminPage.php', [], true)
+ 5 APPPATH\Controllers\AdminPageControl.php(17): view('adminPage.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminPageControl->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPageControl))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 19:51:14 --> Class "App\Models\ValidasiModel" not found
+in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 19:52:18 --> Class "App\Models\ValidasiModel" not found
+in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 19:52:24 --> Class "App\Models\ValidasiModel" not found
+in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 19:52:36 --> Class "App\Models\ValidasiModel" not found
+in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 19:53:01 --> Undefined variable $data_user
+in APPPATH\Controllers\ValidasiControl.php on line 23.
+ 1 APPPATH\Controllers\ValidasiControl.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_user', 'APPPATH\\Controllers\\ValidasiControl.php', 23)
+ 2 APPPATH\Controllers\ValidasiControl.php(34): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 19:53:57 --> Undefined variable $model
+in APPPATH\Controllers\ValidasiControl.php on line 23.
+ 1 APPPATH\Controllers\ValidasiControl.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'APPPATH\\Controllers\\ValidasiControl.php', 23)
+ 2 APPPATH\Controllers\ValidasiControl.php(34): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 19:54:03 --> Undefined variable $model
+in APPPATH\Controllers\ValidasiControl.php on line 23.
+ 1 APPPATH\Controllers\ValidasiControl.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'APPPATH\\Controllers\\ValidasiControl.php', 23)
+ 2 APPPATH\Controllers\ValidasiControl.php(34): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 19:55:11 --> Undefined variable $data
+in APPPATH\Controllers\ValidasiControl.php on line 23.
+ 1 APPPATH\Controllers\ValidasiControl.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\ValidasiControl.php', 23)
+ 2 APPPATH\Controllers\ValidasiControl.php(34): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 19:59:08 --> Call to undefined function App\Controllers\tampilkan_dataUser()
+in APPPATH\Controllers\ValidasiControl.php on line 18.
+ 1 APPPATH\Controllers\ValidasiControl.php(34): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 19:59:23 --> Undefined variable $data
+in APPPATH\Controllers\ValidasiControl.php on line 22.
+ 1 APPPATH\Controllers\ValidasiControl.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\ValidasiControl.php', 22)
+ 2 APPPATH\Controllers\ValidasiControl.php(33): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 19:59:38 --> Undefined variable $data_user
+in APPPATH\Controllers\ValidasiControl.php on line 22.
+ 1 APPPATH\Controllers\ValidasiControl.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_user', 'APPPATH\\Controllers\\ValidasiControl.php', 22)
+ 2 APPPATH\Controllers\ValidasiControl.php(33): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:10:44 --> Call to undefined function App\Controllers\head()
+in APPPATH\Controllers\ValidasiControl.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:10:54 --> header(): Argument #2 ($replace) must be of type bool, array given
+in APPPATH\Controllers\ValidasiControl.php on line 17.
+ 1 APPPATH\Controllers\ValidasiControl.php(17): header('Validasi.php', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:16:33 --> Undefined variable $data_user
+in APPPATH\Views\Validasi.php on line 7.
+ 1 APPPATH\Views\Validasi.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_user', 'APPPATH\\Views\\Validasi.php', 7)
+ 2 APPPATH\Views\Validasi.php(18): validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Validasi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Validasi.php', [], true)
+ 6 APPPATH\Controllers\ValidasiControl.php(17): view('Validasi.php')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:16:55 --> Undefined variable $data_user
+in APPPATH\Views\Validasi.php on line 7.
+ 1 APPPATH\Views\Validasi.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_user', 'APPPATH\\Views\\Validasi.php', 7)
+ 2 APPPATH\Views\Validasi.php(18): validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Validasi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Validasi.php', [], true)
+ 6 APPPATH\Controllers\ValidasiControl.php(17): view('Validasi.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:16:59 --> Undefined variable $data_user
+in APPPATH\Views\Validasi.php on line 7.
+ 1 APPPATH\Views\Validasi.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_user', 'APPPATH\\Views\\Validasi.php', 7)
+ 2 APPPATH\Views\Validasi.php(18): validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Validasi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Validasi.php', [], true)
+ 6 APPPATH\Controllers\ValidasiControl.php(17): view('Validasi.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:18:19 --> Undefined variable $data_user
+in APPPATH\Views\Validasi.php on line 7.
+ 1 APPPATH\Views\Validasi.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_user', 'APPPATH\\Views\\Validasi.php', 7)
+ 2 APPPATH\Views\Validasi.php(18): validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Validasi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Validasi.php', [], true)
+ 6 APPPATH\Controllers\ValidasiControl.php(17): view('Validasi.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:19:47 --> Undefined variable $data_admin
+in APPPATH\Views\Validasi.php on line 7.
+ 1 APPPATH\Views\Validasi.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_admin', 'APPPATH\\Views\\Validasi.php', 7)
+ 2 APPPATH\Views\Validasi.php(18): validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Validasi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Validasi.php', [], true)
+ 6 APPPATH\Controllers\ValidasiControl.php(17): view('Validasi.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:20:34 --> Undefined variable $data_user
+in APPPATH\Views\Validasi.php on line 7.
+ 1 APPPATH\Views\Validasi.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_user', 'APPPATH\\Views\\Validasi.php', 7)
+ 2 APPPATH\Views\Validasi.php(18): validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Validasi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Validasi.php', [], true)
+ 6 APPPATH\Controllers\ValidasiControl.php(17): view('Validasi.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:21:07 --> Undefined variable $data_user
+in APPPATH\Views\Validasi.php on line 7.
+ 1 APPPATH\Views\Validasi.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_user', 'APPPATH\\Views\\Validasi.php', 7)
+ 2 APPPATH\Views\Validasi.php(18): validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Validasi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Validasi.php', [], true)
+ 6 APPPATH\Controllers\ValidasiControl.php(17): view('Validasi.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:23:07 --> Undefined variable $data_user
+in APPPATH\Views\Validasi.php on line 7.
+ 1 APPPATH\Views\Validasi.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_user', 'APPPATH\\Views\\Validasi.php', 7)
+ 2 APPPATH\Views\Validasi.php(18): validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Validasi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Validasi.php', [], true)
+ 6 APPPATH\Controllers\ValidasiControl.php(17): view('Validasi.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:24:36 --> Undefined variable $data_user
+in APPPATH\Views\Validasi.php on line 7.
+ 1 APPPATH\Views\Validasi.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_user', 'APPPATH\\Views\\Validasi.php', 7)
+ 2 APPPATH\Views\Validasi.php(18): validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Validasi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Validasi.php', [], true)
+ 6 APPPATH\Controllers\ValidasiControl.php(17): view('Validasi.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:25:22 --> Undefined variable $data_user
+in APPPATH\Views\Validasi.php on line 7.
+ 1 APPPATH\Views\Validasi.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_user', 'APPPATH\\Views\\Validasi.php', 7)
+ 2 APPPATH\Views\Validasi.php(18): validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Validasi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Validasi.php', [], true)
+ 6 APPPATH\Controllers\ValidasiControl.php(17): view('Validasi.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:28:21 --> Undefined array key "c14220016@john.petra.ac.id"
+in APPPATH\Views\Validasi.php on line 10.
+ 1 APPPATH\Views\Validasi.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "c14220016@john.petra.ac.id"', 'APPPATH\\Views\\Validasi.php', 10)
+ 2 APPPATH\Views\Validasi.php(16): validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Validasi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Validasi.php', [], true)
+ 6 APPPATH\Controllers\ValidasiControl.php(17): view('Validasi.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:28:49 --> Undefined array key "c14220016@john.petra.ac.id"
+in APPPATH\Views\Validasi.php on line 10.
+ 1 APPPATH\Views\Validasi.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "c14220016@john.petra.ac.id"', 'APPPATH\\Views\\Validasi.php', 10)
+ 2 APPPATH\Views\Validasi.php(16): validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Validasi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Validasi.php', [], true)
+ 6 APPPATH\Controllers\ValidasiControl.php(17): view('Validasi.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:29:24 --> Undefined variable $data_user
+in APPPATH\Views\Validasi.php on line 7.
+ 1 APPPATH\Views\Validasi.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_user', 'APPPATH\\Views\\Validasi.php', 7)
+ 2 APPPATH\Views\Validasi.php(18): validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Validasi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Validasi.php', [], true)
+ 6 APPPATH\Controllers\ValidasiControl.php(17): view('Validasi.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:29:32 --> Undefined array key "c14220016@john.petra.ac.id"
+in APPPATH\Views\Validasi.php on line 9.
+ 1 APPPATH\Views\Validasi.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "c14220016@john.petra.ac.id"', 'APPPATH\\Views\\Validasi.php', 9)
+ 2 APPPATH\Views\Validasi.php(15): validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Validasi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Validasi.php', [], true)
+ 6 APPPATH\Controllers\ValidasiControl.php(17): view('Validasi.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:31:52 --> Undefined variable $data_user
+in APPPATH\Views\Validasi.php on line 7.
+ 1 APPPATH\Views\Validasi.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_user', 'APPPATH\\Views\\Validasi.php', 7)
+ 2 APPPATH\Views\Validasi.php(18): validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Validasi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Validasi.php', [], true)
+ 6 APPPATH\Controllers\ValidasiControl.php(17): view('Validasi.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:38:12 --> Undefined variable $user_data
+in APPPATH\Controllers\ValidasiControl.php on line 23.
+ 1 APPPATH\Controllers\ValidasiControl.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_data', 'APPPATH\\Controllers\\ValidasiControl.php', 23)
+ 2 APPPATH\Controllers\ValidasiControl.php(33): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:40:42 --> Undefined variable $dataUser
+in APPPATH\Controllers\ValidasiControl.php on line 23.
+ 1 APPPATH\Controllers\ValidasiControl.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataUser', 'APPPATH\\Controllers\\ValidasiControl.php', 23)
+ 2 APPPATH\Controllers\ValidasiControl.php(33): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:40:56 --> Undefined variable $user_data
+in APPPATH\Controllers\ValidasiControl.php on line 23.
+ 1 APPPATH\Controllers\ValidasiControl.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_data', 'APPPATH\\Controllers\\ValidasiControl.php', 23)
+ 2 APPPATH\Controllers\ValidasiControl.php(33): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:44:23 --> Undefined property: CodeIgniter\Autoloader\Autoloader::$load
+in APPPATH\Controllers\ValidasiControl.php on line 7.
+ 1 APPPATH\Controllers\ValidasiControl.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Autoloader\\Autoloader::$load', 'APPPATH\\Controllers\\ValidasiControl.php', 7)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('APPPATH\\Controllers\\ValidasiControl.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\ValidasiControl.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ValidasiControl')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ValidasiControl')
+ 6 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ValidasiControl', true)
+ 7 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:44:44 --> Undefined property: App\Controllers\ValidasiControl::$load
+in APPPATH\Controllers\ValidasiControl.php on line 16.
+ 1 APPPATH\Controllers\ValidasiControl.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ValidasiControl::$load', 'APPPATH\\Controllers\\ValidasiControl.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-07 20:45:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\ValidasiControl::$models is deprecated in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:45:02 --> Undefined variable $user_data
+in APPPATH\Controllers\ValidasiControl.php on line 23.
+ 1 APPPATH\Controllers\ValidasiControl.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_data', 'APPPATH\\Controllers\\ValidasiControl.php', 23)
+ 2 APPPATH\Controllers\ValidasiControl.php(33): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-07 20:50:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\ValidasiControl::$models is deprecated in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:50:34 --> Undefined variable $user_data
+in APPPATH\Controllers\ValidasiControl.php on line 23.
+ 1 APPPATH\Controllers\ValidasiControl.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_data', 'APPPATH\\Controllers\\ValidasiControl.php', 23)
+ 2 APPPATH\Controllers\ValidasiControl.php(33): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-07 20:50:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\ValidasiControl::$models is deprecated in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:50:45 --> Undefined variable $user_data
+in APPPATH\Controllers\ValidasiControl.php on line 23.
+ 1 APPPATH\Controllers\ValidasiControl.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_data', 'APPPATH\\Controllers\\ValidasiControl.php', 23)
+ 2 APPPATH\Controllers\ValidasiControl.php(33): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-07 20:51:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\ValidasiControl::$models is deprecated in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:51:12 --> Using $this when not in object context
+in APPPATH\Controllers\ValidasiControl.php on line 17.
+ 1 APPPATH\Controllers\ValidasiControl.php(33): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-07 20:51:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\ValidasiControl::$models is deprecated in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:51:42 --> Undefined constant "App\Controllers\ValidasiModel"
+in APPPATH\Controllers\ValidasiControl.php on line 17.
+ 1 APPPATH\Controllers\ValidasiControl.php(33): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:52:57 --> Using $this when not in object context
+in APPPATH\Controllers\ValidasiControl.php on line 18.
+ 1 APPPATH\Controllers\ValidasiControl.php(34): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-07 20:54:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\ValidasiControl::$models is deprecated in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:54:06 --> Too few arguments to function App\Controllers\ValidasiControl::index(), 0 passed in C:\xampp\htdocs\TugasWGG\system\CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH\Controllers\ValidasiControl.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-07 20:54:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\ValidasiControl::$models is deprecated in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:54:45 --> Too few arguments to function App\Controllers\ValidasiControl::index(), 0 passed in C:\xampp\htdocs\TugasWGG\system\CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH\Controllers\ValidasiControl.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-07 20:55:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\ValidasiControl::$models is deprecated in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:55:09 --> Undefined variable $user_data
+in APPPATH\Controllers\ValidasiControl.php on line 23.
+ 1 APPPATH\Controllers\ValidasiControl.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_data', 'APPPATH\\Controllers\\ValidasiControl.php', 23)
+ 2 APPPATH\Controllers\ValidasiControl.php(33): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-07 20:55:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\ValidasiControl::$models is deprecated in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:55:32 --> Call to undefined function App\Controllers\__construct()
+in APPPATH\Controllers\ValidasiControl.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:55:53 --> Call to undefined function App\Controllers\__construc()
+in APPPATH\Controllers\ValidasiControl.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

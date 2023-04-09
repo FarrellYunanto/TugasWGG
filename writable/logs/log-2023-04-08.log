@@ -1,0 +1,177 @@
+WARNING - 2023-04-08 08:20:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\ValidasiControl::$models is deprecated in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 08:20:05 --> Undefined variable $user_data
+in APPPATH\Controllers\ValidasiControl.php on line 23.
+ 1 APPPATH\Controllers\ValidasiControl.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_data', 'APPPATH\\Controllers\\ValidasiControl.php', 23)
+ 2 APPPATH\Controllers\ValidasiControl.php(33): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-08 08:20:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\ValidasiControl::$models is deprecated in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-08 08:42:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\ValidasiControl::$models is deprecated in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-08 08:43:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\ValidasiControl::$models is deprecated in APPPATH\Controllers\ValidasiControl.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 08:43:03 --> Call to undefined function App\Controllers\mysql_query()
+in APPPATH\Controllers\ValidasiControl.php on line 19.
+ 1 APPPATH\Controllers\ValidasiControl.php(51): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-08 08:44:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\ValidasiControl::$models is deprecated in APPPATH\Controllers\ValidasiControl.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\ValidasiControl->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 08:45:23 --> Undefined variable $model
+in APPPATH\Controllers\ValidasiControl.php on line 24.
+ 1 APPPATH\Controllers\ValidasiControl.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'APPPATH\\Controllers\\ValidasiControl.php', 24)
+ 2 APPPATH\Controllers\ValidasiControl.php(34): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 08:46:02 --> Undefined constant "App\Controllers\ValidasiControl"
+in APPPATH\Controllers\ValidasiControl.php on line 24.
+ 1 APPPATH\Controllers\ValidasiControl.php(34): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 08:47:01 --> Cannot use object of type App\Models\ValidasiModel as array
+in APPPATH\Controllers\ValidasiControl.php on line 28.
+ 1 APPPATH\Controllers\ValidasiControl.php(34): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 08:48:52 --> Cannot use object of type App\Models\ValidasiModel as array
+in APPPATH\Controllers\ValidasiControl.php on line 28.
+ 1 APPPATH\Controllers\ValidasiControl.php(34): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 08:49:00 --> Cannot use object of type App\Models\ValidasiModel as array
+in APPPATH\Controllers\ValidasiControl.php on line 28.
+ 1 APPPATH\Controllers\ValidasiControl.php(34): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 08:52:34 --> Cannot use object of type App\Models\ValidasiModel as array
+in APPPATH\Controllers\ValidasiControl.php on line 28.
+ 1 APPPATH\Controllers\ValidasiControl.php(34): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 08:54:17 --> Attempt to read property "Email" on null
+in APPPATH\Controllers\ValidasiControl.php on line 28.
+ 1 APPPATH\Controllers\ValidasiControl.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Email" on null', 'APPPATH\\Controllers\\ValidasiControl.php', 28)
+ 2 APPPATH\Controllers\ValidasiControl.php(38): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 08:55:16 --> Attempt to read property "Email" on null
+in APPPATH\Controllers\ValidasiControl.php on line 28.
+ 1 APPPATH\Controllers\ValidasiControl.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Email" on null', 'APPPATH\\Controllers\\ValidasiControl.php', 28)
+ 2 APPPATH\Controllers\ValidasiControl.php(38): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 08:58:25 --> Attempt to read property "Email" on null
+in APPPATH\Controllers\ValidasiControl.php on line 28.
+ 1 APPPATH\Controllers\ValidasiControl.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Email" on null', 'APPPATH\\Controllers\\ValidasiControl.php', 28)
+ 2 APPPATH\Controllers\ValidasiControl.php(38): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 09:30:25 --> Undefined variable $conn
+in APPPATH\Controllers\ValidasiControl.php on line 15.
+ 1 APPPATH\Controllers\ValidasiControl.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conn', 'APPPATH\\Controllers\\ValidasiControl.php', 15)
+ 2 APPPATH\Controllers\ValidasiControl.php(39): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 09:31:21 --> mysqli_query() expects at least 2 arguments, 1 given
+in APPPATH\Controllers\ValidasiControl.php on line 15.
+ 1 APPPATH\Controllers\ValidasiControl.php(15): mysqli_query('SELECT * FROM user')
+ 2 APPPATH\Controllers\ValidasiControl.php(39): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 09:31:59 --> Undefined variable $conn
+in APPPATH\Controllers\ValidasiControl.php on line 15.
+ 1 APPPATH\Controllers\ValidasiControl.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conn', 'APPPATH\\Controllers\\ValidasiControl.php', 15)
+ 2 APPPATH\Controllers\ValidasiControl.php(39): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 09:35:50 --> Attempt to read property "Email" on array
+in APPPATH\Controllers\ValidasiControl.php on line 29.
+ 1 APPPATH\Controllers\ValidasiControl.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Email" on array', 'APPPATH\\Controllers\\ValidasiControl.php', 29)
+ 2 APPPATH\Controllers\ValidasiControl.php(39): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 12:52:16 --> Using $this when not in object context
+in APPPATH\Controllers\ValidasiControl.php on line 39.
+ 1 APPPATH\Controllers\ValidasiControl.php(54): App\Controllers\validasiLogin('email@gmail.com', '123456')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 12:54:11 --> Undefined array key "c14220016@john.petra.ac.id"
+in APPPATH\Controllers\ValidasiControl.php on line 45.
+ 1 APPPATH\Controllers\ValidasiControl.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "c14220016@john.petra.ac.id"', 'APPPATH\\Controllers\\ValidasiControl.php', 45)
+ 2 APPPATH\Controllers\ValidasiControl.php(51): App\Controllers\validasiLogin('c14220016@john.petra.ac.id', 'passwordgeming')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 13:05:43 --> Invalid file: "/.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('C:\\', [], true)
+ 3 APPPATH\Controllers\ValidasiControl.php(22): view('C:\\')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 19:18:20 --> Undefined property: App\Controllers\AdminPageControl::$load
+in APPPATH\Controllers\AdminPageControl.php on line 16.
+ 1 APPPATH\Controllers\AdminPageControl.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AdminPageControl::$load', 'APPPATH\\Controllers\\AdminPageControl.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminPageControl->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPageControl))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 19:18:39 --> Undefined property: App\Controllers\AdminPageControl::$load
+in APPPATH\Controllers\AdminPageControl.php on line 13.
+ 1 APPPATH\Controllers\AdminPageControl.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AdminPageControl::$load', 'APPPATH\\Controllers\\AdminPageControl.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\AdminPageControl->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

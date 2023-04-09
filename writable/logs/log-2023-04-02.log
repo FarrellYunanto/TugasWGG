@@ -1,0 +1,41 @@
+CRITICAL - 2023-04-02 13:19:23 --> Invalid file: "homrPage.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homrPage.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('homrPage.php', [], true)
+ 3 APPPATH\Controllers\HomePageControl.php(11): view('homrPage.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomePageControl->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomePageControl))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 14:04:17 --> Undefined array key "email"
+in APPPATH\Controllers\ValidasiControl.php on line 25.
+ 1 APPPATH\Controllers\ValidasiControl.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Controllers\\ValidasiControl.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 14:06:35 --> Undefined array key "email"
+in APPPATH\Controllers\ValidasiControl.php on line 25.
+ 1 APPPATH\Controllers\ValidasiControl.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Controllers\\ValidasiControl.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 14:09:47 --> Invalid file: "/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/home', [], true)
+ 3 APPPATH\Controllers\ValidasiControl.php(28): view('/home')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 14:12:44 --> Invalid file: "/.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('C:\\', [], true)
+ 3 APPPATH\Controllers\ValidasiControl.php(28): view('C:\\')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ValidasiControl->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ValidasiControl))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
