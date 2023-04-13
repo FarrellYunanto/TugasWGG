@@ -25,4 +25,10 @@ class AdminPageModel extends Model
     public function tambah_data($data){
         return $this->insert($data);
     }
+
+    public function fetch_data($NRP){
+        return $this
+        ->where('NRP', $NRP)
+        ->first();
+    }
 }

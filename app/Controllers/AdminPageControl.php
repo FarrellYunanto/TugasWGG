@@ -24,15 +24,23 @@ class AdminPageControl extends BaseController
            'Nama' => $this->request->getVar('adminName') 
         ]);
 
+        $data['data_admin'] = $this->model->tampilkan_data();
+
         if($this->model->db->affectedRows() > 0){
-            return redirect()
-            ->to(site_url('/adminPage'))
-            ->with('msg_success', 'Data berhasil ditambahkan');
+        return redirect()
+           ->to(site_url('/adminPages'))
+           ->with('msg_success', 'Data berhasil ditambahkan');
         } else {
-            return redirect()
-            ->to(site_url('/adminPage'))
-            ->with('msg_success', 'Data gagal ditambahkan');
+           return redirect()
+           ->to(site_url('/adminPages'))
+           ->with('msg_unsuccess', 'Data gagal ditambahkan');
         }
+
         return view('adminPage.php', $data);
+    }
+
+    public function edit($NRP){
+        $data['fetch_data'] = $this->model->fetch_data($NRP);
+        return view('editData.php', $data);
     }
 }

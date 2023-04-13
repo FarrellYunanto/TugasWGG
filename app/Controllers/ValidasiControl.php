@@ -22,7 +22,14 @@ class ValidasiControl extends BaseController
             return view('/loginPage');
             die;
         } else {
-            return view('/homePage');
+         //  return view('homePage');
+             return redirect()
+            ->to(site_url('/validasiSuccess'))
+            ->with('msg_success', 'Login success');
         }
+    }
+
+    public function sukses(){
+        return view('homePage');
     }
 }

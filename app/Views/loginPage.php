@@ -103,6 +103,16 @@
 <body>
     <div class="center">
         <h1> Login </h1>
+
+        <?php if(session()->has('msg_success')){ ?>
+            <script>Swal.fire({
+                      icon: 'success',
+                      title: 'Success!',
+                      text: 'Sukses menambah data',
+                })
+            </script>
+          <?php } ?>
+          
             <form method="post" action="../validasi">
                 <div class="txt_field">
                     <input type="text" name="email" required> 

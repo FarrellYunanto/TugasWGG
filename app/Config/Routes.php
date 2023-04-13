@@ -31,9 +31,19 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'LoginPageControl::index');
 $routes->get('/home', 'HomePageControl::index');
-$routes->get('/adminPage', 'AdminPageControl::index');
-$routes->post('/adminPage', 'AdminPageControl::tambah');
+
+$routes->get('/validasiSuccess', 'ValidasiControl::sukses');
 $routes->post('/validasi', 'ValidasiControl::index');
+
+$routes->get('/adminPage', 'AdminPageControl::index');
+//$routes->get('/adminPages', 'AdminPageControl::index');
+$routes->post('/adminPages', 'AdminPageControl::tambah');
+
+$routes->match(['get', 'put'], '/edit([\w]+)', 'AdminPageControl::edit/$1');
+$routes->match(['get', 'post'], '/hapus', 'AdminPageControl::hapus');
+
+
+
 
 
 /*

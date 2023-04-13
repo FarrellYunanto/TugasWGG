@@ -126,19 +126,19 @@
 
         <div class="center">
           <h1>
-            Tambah Admin
-          </h1>
+            Edit Admin
+          </h1>    
 
-          <?php if(session()->has('msg_success')){ ?>
+          <?php if(!$fetch_data): ?>
             <script>Swal.fire({
-                      icon: 'success',
-                      title: 'Success!',
-                      text: 'Sukses menambah data',
+                      icon: 'error',
+                      title: 'Error!',
+                      text: 'Data tidak dapat ditemukan',
                 })
             </script>
-          <?php } ?>
+          <?php else: ?>
+          <?php endif ?>
 
-          
           <form method = "post" name = "data" action="../adminPages">
               <div class="txt_field">
                   <input type="text" name="adminName" required> 
@@ -149,36 +149,9 @@
                   <label> NRP Admin </label>
               </div>
               <div class="submitButton">
-                <button type = "submit" class = "btn">Tambah data</button>
+                <button type = "submit" class = "btn">edit data</button>
               </div>                  
           </form>
-        </div>  
-
-        <div class="tabelAdmin">
-          <table class="table" id="tbl">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">NRP</th>
-                <th scope="col">Nama Admin</th>
-                <th scope="col">Aksi</th>
-              </tr>
-            </thead>
-            <tbody>
-
-            <?php foreach($data_admin as $admin): ?>
-              <tr>
-                <td>-</td>
-                <td><?= htmlspecialchars($admin->NRP) ?></td>
-                <td><?= htmlspecialchars($admin->Nama) ?></td>
-                <td>
-                  <a href="<?=site_url('/edit'.$admin->NRP)?>" class = "btn btn-secondary btn-sm">Edit</a>
-                  <a href="<?=site_url('/hapus'.$admin->NRP)?>" class = "btn btn-danger btn-sm">Hapus</a>
-                </td>
-              </tr>
-            <?php endforeach ?>
-            </tbody>
-          </table>
-        </div>
+        </div> 
 </body>
 </html>
