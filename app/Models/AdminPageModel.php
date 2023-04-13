@@ -31,4 +31,22 @@ class AdminPageModel extends Model
         ->where('NRP', $NRP)
         ->first();
     }
+
+    public function edit_data($data)
+    {
+        return $this
+            ->set([
+                'Nama' => $data['Nama'],
+            ])
+            ->where('NRP', $data['NRP'])
+            ->update();
+    }
+
+    public function hapus_data($NRP)
+    {
+        return $this
+            ->where('NRP', $NRP)
+            ->delete();
+            
+    }
 }

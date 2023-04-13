@@ -158,7 +158,7 @@
           <table class="table" id="tbl">
             <thead>
               <tr>
-                <th scope="col">#</th>
+                <th scope="col"></th>
                 <th scope="col">NRP</th>
                 <th scope="col">Nama Admin</th>
                 <th scope="col">Aksi</th>
@@ -168,7 +168,7 @@
 
             <?php foreach($data_admin as $admin): ?>
               <tr>
-                <td>-</td>
+                <td></td>
                 <td><?= htmlspecialchars($admin->NRP) ?></td>
                 <td><?= htmlspecialchars($admin->Nama) ?></td>
                 <td>

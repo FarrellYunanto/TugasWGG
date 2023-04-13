@@ -36,11 +36,12 @@ $routes->get('/validasiSuccess', 'ValidasiControl::sukses');
 $routes->post('/validasi', 'ValidasiControl::index');
 
 $routes->get('/adminPage', 'AdminPageControl::index');
-//$routes->get('/adminPages', 'AdminPageControl::index');
+$routes->get('/adminPages', 'AdminPageControl::index');
 $routes->post('/adminPages', 'AdminPageControl::tambah');
+$routes->post('/edit', 'AdminPageControl::edit_data');
 
 $routes->match(['get', 'put'], '/edit([\w]+)', 'AdminPageControl::edit/$1');
-$routes->match(['get', 'post'], '/hapus', 'AdminPageControl::hapus');
+$routes->match(['get', 'post'], '/hapus([\w]+)', 'AdminPageControl::hapus/$1');
 
 
 

@@ -43,4 +43,19 @@ class AdminPageControl extends BaseController
         $data['fetch_data'] = $this->model->fetch_data($NRP);
         return view('editData.php', $data);
     }
+
+    public function edit_data(){
+        $edit_data = $this->model->edit_data([
+            'NRP' => $this->request->getVar('nRPAdmin'),
+            'Nama' => $this->request->getVar('adminName'),
+        ]);
+        $data['data_admin'] = $this->model->tampilkan_data();
+        return view('adminPage.php', $data);
+    }
+
+    public function hapus($NRP){
+        $delete['del_data'] = $this->model->hapus_data($NRP);
+        $data['data_admin'] = $this->model->tampilkan_data();
+        return view('adminPage.php', $data);
+    }
 }

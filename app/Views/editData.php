@@ -137,21 +137,25 @@
                 })
             </script>
           <?php else: ?>
-          <?php endif ?>
+          
 
-          <form method = "post" name = "data" action="../adminPages">
+            <form method = "post" name = "data" action="../edit">
               <div class="txt_field">
-                  <input type="text" name="adminName" required> 
+                  <input type="text" name="adminName" value = "<?=$fetch_data->Nama?>" required> 
                   <label> Admin Name </label>
               </div>
               <div class="txt_field">
-                  <input type="text"  name="nRPAdmin" required>
-                  <label> NRP Admin </label>
+                  <input hidden type="text" value="<?=$fetch_data->NRP?>" name="nRPAdmin" required>
+                  <label style= "color: silver"> <?=$fetch_data->NRP?> </label>
+                  <br>
               </div>
               <div class="submitButton">
+
+              
                 <button type = "submit" class = "btn">edit data</button>
               </div>                  
-          </form>
+          <?=form_close()?>
+          <?php endif ?>
         </div> 
 </body>
 </html>
